@@ -5,9 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Finance Hub 360 - GST, TDS & Income Tax Made Simple</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .menu-toggle {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background: #222;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 1100;
+      border-radius: 5px;
+    }
+
+    .sidebar {
+      width: 250px;
+      background: #222;
+      color: white;
+      height: 100vh;
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      left: -250px;
+      transition: left 0.3s ease;
+      z-index: 1000;
+    }
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .main-content {
+      margin-left: 0;
+      transition: margin-left 0.3s ease;
+      padding: 1rem;
+    }
+
+    .sidebar.active ~ .main-content {
+      margin-left: 250px;
+    }
+  </style>
 </head>
 <body>
-  <aside class="sidebar">
+  <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+  <aside class="sidebar" id="sidebar">
     <h1><i class="fas fa-user-tie"></i> Finance Hub 360</h1>
     <nav>
       <a href="index.html">Home</a>
@@ -58,6 +101,11 @@
     </section>
   </main>
 
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
