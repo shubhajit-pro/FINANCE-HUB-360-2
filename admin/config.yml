@@ -1,7 +1,11 @@
-
 backend:
   name: git-gateway
+  repo: shubhajit-pro/FINANCE-HUB-360-2
   branch: main
+  auth_scope: repo
+
+  site_url: https://finance-hub-360-2.netlify.app
+display_url: https://finance-hub-360-2.netlify.app
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
