@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Contact - Finance Hub 360</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+      <aside class="sidebar" id="sidebar">
+        <h1>Finance Hub 360</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </aside>
+      <main class="main-content" style="padding-left: 2rem;">
+        <h2>Contact Us</h2>
+        <p>Email: support@financehub360.com</p>
+        <p>Phone: +91-12345-67890</p>
+      </main>
+      <script>
+        function toggleSidebar() {
+          document.getElementById("sidebar").classList.toggle("active");
+        }
+      </script>
+    </body>
+    </html>

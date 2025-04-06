@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>About - Finance Hub 360</title>
+      <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+      <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+      <aside class="sidebar" id="sidebar">
+        <h1>Finance Hub 360</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </aside>
+      <main class="main-content" style="padding-left: 2rem;">
+        <h2>About Us</h2>
+        <p>Finance Hub 360 is committed to simplifying tax processes for individuals and businesses. We specialize in GST, TDS, and Income Tax services.</p>
+      </main>
+      <script>
+        function toggleSidebar() {
+          document.getElementById("sidebar").classList.toggle("active");
+        }
+      </script>
+    </body>
+    </html>
