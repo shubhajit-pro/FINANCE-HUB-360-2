@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Blog - Finance Hub 360</title>
-      <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-      <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
-      <aside class="sidebar" id="sidebar">
-        <h1>Finance Hub 360</h1>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="services.html">Services</a>
-          <a href="blog.html">Blog</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </aside>
-      <main class="main-content" style="padding-left: 2rem;">
-        <h2>Taxation Blog</h2>
-        <p>Read the latest updates and expert insights on GST, TDS, and Income Tax in India.</p>
-      </main>
-      <script>
-        function toggleSidebar() {
-          document.getElementById("sidebar").classList.toggle("active");
-        }
-      </script>
-    </body>
-    </html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog - Finance Hub 360</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .page-content {
+      padding: 2rem 2rem 2rem 280px;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-toggle" onclick="toggleSidebar()">☰</div>
+
+  <aside class="sidebar" id="sidebar">
+    <h1><i class="fas fa-user-tie"></i> Finance Hub 360</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin/">Admin</a>
+    </nav>
+  </aside>
+
+  <main class="page-content">
+    <h2>Our Blog</h2>
+    <p>Insights, updates, and tips on GST, TDS, and Income Tax.</p>
+  </main>
+
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+    }
+  </script>
+</body>
+</html
